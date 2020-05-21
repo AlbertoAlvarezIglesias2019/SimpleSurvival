@@ -1,0 +1,16 @@
+Package: SimpleSurvival
+Type: Package
+Title: Performs simple tasks for survival analysis
+Version: 0.0.0
+Author: Alberto Alvarez-Iglesias
+Maintainer: Alberto Alvarez-Iglesias <alberto.alvarez-iglesias@nuigalway.ie>
+Description: Performs some simple tasks for the analysis of time to event data. These include:
+    - Kaplan-Meier estimation of the suvivor function 
+    - Log-Rank test
+    - Cox proportional hazard models (with stratification and proportional hazards diagnostics)
+    - Survival trees using conditional independence approach.
+    Note that Cox models cannot include interation terms at the moment (this will be implemented in future versions) 
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Imports: jmvcore (>= 0.8.5), R6, survival, ggfortify, survminer, tidyverse, broom, party
